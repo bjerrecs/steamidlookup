@@ -1,0 +1,32 @@
+/*This removes link styleing and makes it white*/
+a {
+    color: white;
+}
+    a:link {
+    text-decoration: none;
+    color: #ddd;
+}
+a:visited {
+    text-decoration: none;
+    color: #ddd;
+}
+a:hover {
+    text-decoration: none;
+    color: #ddd;
+}
+a:active {
+    text-decoration: none;
+    color: #ddd;
+}
+body {
+background: #0fb8ad; /* For browsers that do not support gradients */
+background: linear-gradient(to right, #0fb8ad , #2cb5e8); /* Standard syntax (must be last) */
+}
+hr {
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px solid #ccc;
+margin: 1em 0;
+padding: 0;
+}

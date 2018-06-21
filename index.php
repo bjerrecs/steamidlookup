@@ -11,11 +11,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <title>Steam API Exam Code</title>
+    <style>
+    body {
+    background: #0fb8ad; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, #0fb8ad , #2cb5e8); /* Standard syntax (must be last) */
+    }
+    </style>
 </head>
 <body style="background-color: #384a68;color:#fff">
 <div align="center">
 <img src="steam.png" alt="Steam Logo" align="center" style="padding-top:50px;width:200px;">
 </div>
+
 
 
 <form action="result.php" method="post">
