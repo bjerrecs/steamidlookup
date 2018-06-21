@@ -1,10 +1,4 @@
 <?php
-//////////////////////////
-// Steam API CODE       //
-// Made my Simon Bjerre //
-// MIT Licens           //
-//////////////////////////
-
 //Get the SteamID from the form
 $form_steamid = $_POST["sid"];
 
@@ -13,24 +7,20 @@ include 'inc/apimaster.php';
 include 'inc/staticvalues.php';
 include 'inc/countryname.php';
 include 'inc/nhl.php';
+include 'inc/level.php';
 
-//////////////////////////////////////////
-//Convert SteamID64 in to SteamID URL   //
-//////////////////////////////////////////
 $steamidurl = 'https://steamcommunity.com/profiles/' . $user_steamid;
-
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap-->
     <link rel="stylesheet" href="css/style.css">
-     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
@@ -47,14 +37,13 @@ $steamidurl = 'https://steamcommunity.com/profiles/' . $user_steamid;
             <h2><?php echo $user_realname; ?></h2>
             <p>
             <?php
-            //Display contry flag
-            echo'<img src="img/';
-            echo strtolower($user_country);
-            echo '.png">';
+                //Display contry flag
+                echo'<img src="img/';
+                echo strtolower($user_country);
+                echo '.png">';
             ?>
             <?php echo $fullctname;?>
             </p>
-
         </div>
         <div class="col-xl-2">
 
