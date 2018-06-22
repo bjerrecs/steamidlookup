@@ -8,7 +8,9 @@ include 'inc/staticvalues.php';
 include 'inc/countryname.php';
 include 'inc/nhl.php';
 include 'inc/level.php';
+include 'inc/rgames.php';
 
+//set the steam profile url
 $steamidurl = 'https://steamcommunity.com/profiles/' . $user_steamid;
 
 ?>
@@ -26,7 +28,7 @@ $steamidurl = 'https://steamcommunity.com/profiles/' . $user_steamid;
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
     <title>Steam API Exam Code</title>
 </head>
-<body style="color:#fff">
+<body style="color:#2b2b2b">
 <div class="container-fluid">
     <div class="row">
         <div class="col-xl-2" align="right" class="master" style="padding-top:40px">
@@ -85,6 +87,16 @@ $steamidurl = 'https://steamcommunity.com/profiles/' . $user_steamid;
             <p>SteamID URL: <a href="<?php echo $steamidurl; ?>"target="_blank"><?php echo $steamidurl; ?></a></p>
         </div>
     </div>
+</div>
+
+<div align="center">
+    <h2 style="padding-top:225px;font-size:38px;">Recently Played Games</h2>
+        <img src="<?php echo $game_img_url1;?>" alt="Game 1" style="width:20%">
+    <p><?php echo $game_name1;?></p>
+        <img src="<?php echo $game_img_url2;?>" alt="Game 2" style="width:20%">
+    <p><?php echo $game_name2;?></p>
+        <img src="<?php echo $game_img_url3;?>" alt="Game 3" style="width:20%">
+    <p><?php echo $game_name3;?></p>
 </div>
 
 <p style="padding-top:220px;text-align:center">Powered by <a href="https://steamcommunity.com/">Steam </a>, a registered trademark of Valve Corporation.</p>

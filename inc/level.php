@@ -1,6 +1,6 @@
 <?php
 
-$URL = 'https://api.steampowered.com/IPlayerService/GetSteamLevel/v1/?key=0E2A2883CF4B7E220056DFC9A965AF2B&steamid=76561198357369235';
+$URL = 'https://api.steampowered.com/IPlayerService/GetSteamLevel/v1/?key=0E2A2883CF4B7E220056DFC9A965AF2B&steamid=';
 $api_url = $api_urldefault . $form_steamid;
 
 //Converts JSON to array
