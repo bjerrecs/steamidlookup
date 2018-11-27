@@ -1,7 +1,7 @@
 <?php
 
 //Loads the api urls and assign a class to them
-$api_urldefault = 'https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=0E2A2883CF4B7E220056DFC9A965AF2B&steamids=';
+$api_urldefault = 'https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=XXXXXXXXXXXXXXXXXXXXX&steamids=';
 $api_url = $api_urldefault . $form_steamid;
 
 //Converts JSON to array
